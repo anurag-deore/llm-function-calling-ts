@@ -1,0 +1,36 @@
+{
+  "name": "local-langchain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node gemini.ts",
+    "build": "tsc",
+    "test": "echo \"Running tests...\" && ts-node test.ts",
+    "dev": "ts-node-dev --respawn index.ts",
+    "lint": "eslint *.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "@langchain/core": "^0.3.42",
+    "@langchain/google-genai": "^0.1.11",
+    "@langchain/openai": "^0.4.7",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "langchain": "^0.3.19",
+    "langfuse": "^3.37.0",
+    "ollama": "^0.5.14",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
+    "@typescript-eslint/parser": "^8.8.1",
+    "eslint": "^9.13.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3"
+  }
+}
